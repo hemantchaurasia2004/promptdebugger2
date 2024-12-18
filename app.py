@@ -124,6 +124,15 @@ def main():
     1. Upload system prompt text file
     2. Upload conversation log text file
     3. Click "Analyze System Prompt Influence"
+
+    #### File Format Requirements
+    - Text files (.txt)
+    - System prompt should describe the AI's behavior
+    - Conversation log should include full interaction
+
+    #### Sample Files
+    - [Sample System Prompt](https://docs.google.com/document/d/19mfI9O-TT6wqiyDEjef3GvwqYJAsPCAfT_zIFT_pvK4/edit?usp=sharing)
+    - [Sample Conversation Log](https://docs.google.com/document/d/1N6gHQhZAJoNGhybedoTeq7w3giZSryhYM_RR2pmwH5U/edit?usp=sharing)
     """)
 
 if __name__ == "__main__":
