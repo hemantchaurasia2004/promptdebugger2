@@ -39,7 +39,7 @@ class SystemPromptInfluenceAnalyzer:
         Conversation Log:
         {conversation_log}
 
-        For EACH agent response, provide:
+        For the response as a whole, provide:
         1. Relevant System Prompt Segments (quote exact text)
         2. Influence Score (0-1.0)
         3. Specific Evidence of Influence
@@ -47,7 +47,7 @@ class SystemPromptInfluenceAnalyzer:
 
         Response Format:
         ```
-        Response 1:
+        Analysis:
         - Relevant Segments: [list of segments]
         - Influence Score: X.XX
         - Evidence: [direct quote mapping]
