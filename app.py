@@ -2,7 +2,7 @@ import streamlit as st
 import anthropic
 
 class SystemPromptInfluenceAnalyzer:
-    def _init_(self):
+    def __init__(self):
         """
         Initialize the analyzer with Anthropic API from Streamlit secrets.
         """
@@ -46,13 +46,13 @@ class SystemPromptInfluenceAnalyzer:
         4. Explanation of Semantic Connection
 
         Response Format:
-        
+        ```
         Response 1:
         - Relevant Segments: [list of segments]
         - Influence Score: X.XX
         - Evidence: [direct quote mapping]
         - Explanation: [semantic connection details]
-        
+        ```
 
         Provide a comprehensive, analytical breakdown that shows
         how the system prompt guides the agent's communication strategy.
