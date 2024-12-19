@@ -135,5 +135,5 @@ def main():
     - [Sample Conversation Log](https://docs.google.com/document/d/1N6gHQhZAJoNGhybedoTeq7w3giZSryhYM_RR2pmwH5U/edit?usp=sharing)
     """)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
