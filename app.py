@@ -31,7 +31,7 @@ class SystemPromptInfluenceAnalyzer:
 
         Task: Carefully analyze the following system prompt and conversation log.
         Identify which specific segments of the system prompt directly influenced
-        the agent's responses.
+        the agent's responses. Include the agent's responses for context in each analysis.
 
         System Prompt:
         {system_prompt}
@@ -40,14 +40,16 @@ class SystemPromptInfluenceAnalyzer:
         {conversation_log}
 
         For EACH agent response, provide:
-        1. Relevant System Prompt Segments (quote exact text)
-        2. Influence Score (0-1.0)
-        3. Specific Evidence of Influence
-        4. Explanation of Semantic Connection
+        1. The Agent's Response
+        2. Relevant System Prompt Segments (quote exact text)
+        3. Influence Score (0-1.0)
+        4. Specific Evidence of Influence
+        5. Explanation of Semantic Connection
 
         Response Format:
         ```
         Response 1:
+        - Agent Response: "..."
         - Relevant Segments: [list of segments]
         - Influence Score: X.XX
         - Evidence: [direct quote mapping]
@@ -109,7 +111,7 @@ def main():
 
             if influence_analysis:
                 st.header("Analysis Results")
-                st.subheader("Raw Analysis")
+                st.subheader("Raw Analysis with Agent Responses")
                 st.text_area("System Prompt Influence Analysis", 
                              value=influence_analysis['raw_analysis'], 
                              height=400)
